@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            /* font-size: 100 px; */
+        }
+
+        nav {
+            background-color: rgb(16, 16, 53);
+            display: flex;
+            /* font-size: large; */
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.7% 8%;
+            color: white;
+            height: 60px
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.5;
+            /* background-color: white;
+            color: black; */
+            color :  rgb(155, 92, 214);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.7rem;
+        }
+
+        .firstSec {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0px
+        }
+
+        .firstleft {
+            font-size: 2.5rem;
+            width: 30%;
+        }
+
+        .firstleft div {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .firstright {
+            width: 30%;
+        }
+
+        .firstright img {
+            width: 80%;
+            /* margin: 50px 0px;
+            padding-left: 68px; */
+        }
+
+        .text-color {
+            color: rgb(155, 92, 214);
+        }
+        #element { 
+            color: rgb(155, 92, 214);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aryan's Portfolio</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSec">
+            <div class="firstleft">
+                Hi, my name is <span class="text-color">Aryan</span>
+                <div>
+                    and I am a passionate
+                </div>
+                <span id="element"></span>
+            </div>
+            <div class="firstright">
+                <img src="bg.png" alt="Error loading">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Tech Enthusiast.', 'Electronics Enthusiast.'],
+            typeSpeed: 40,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
